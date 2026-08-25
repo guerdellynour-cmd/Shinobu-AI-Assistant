@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
   background: #b791cd;
   overflow-y: hidden;
@@ -46,72 +45,11 @@ p{
 
 #loader{
   display: block;
-=======
-body
-{
-    background: #3c0863;
-    overflow: hidden;
-    height: 100vh;
-    margin: 0;
-}
-.container
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 150vh;
-    justify-content: center;
-}
-.text
-{
-    margin-top: 40px;
-}
-
-#loader-wrapper p
-{
-    z-index: 999;
-    user-select: none;
-    margin: 0;
-    font-size: 36px;
-    color: #873aad;
-    padding: 0px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-    -moz_animation: neon2 1.5s ease-in-out infinite alternate;
-    animation: neon2 1.5s ease-in-out infinite alternate;
-}
-
-#loader-wrapper
-{
-    position: fixed;
-    top: 120px;
-    left: 40%;
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
-}
-
-@media (max-width: 1100px)
-{
-    #loader-wrapper
-    {
-        left: 35%;
-    }
-}
-#loader
-{
-    display: block;
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
     position: relative;
     left: 50%;
     top: 50%;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
     margin: -175px 0 0 -175px;
     border-radius: 50%;
     border: 3px solid transparent;
@@ -126,22 +64,6 @@ body
 
 #loader:before {
     content: "";
-=======
-    margin: -150px 0 0 -150px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #c9a8e9;
-    border-bottom-color: #f3e9fb;
-    border-right-color: #b48fd9;
-    border-left-color: #d9c2ec;
-    box-shadow: 0 0 18px #b48fd9;
-    -webkit-animation: spin 30s infinite;
-    animation: spin 30s linear infinite;
-}
-#loader:before
-{
-    content:"";
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
     position: absolute;
     top: 15px;
     left: 15px;
@@ -149,7 +71,6 @@ body
     bottom: 15px;
     border-radius: 50%;
     border: 3px solid transparent;
-<<<<<<< HEAD
     border-color: #731da9;
     border-style:dotted;
     -webkit-animation: spin 18s linear infinite; /* safari */
@@ -158,16 +79,6 @@ body
 
 #loader:after{
   content: "";
-=======
-    border-color:#a87fd1;
-    border-style: dotted;
-    -webkit-animation: spin 18s linear infinite;
-    animation: spin 18s linear infinite;
-}
-#loader:after
-{
-    content:"";
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
     position: absolute;
     top: 25px;
     left: 25px;
@@ -175,7 +86,6 @@ body
     bottom: 25px;
     border-radius: 50%;
     border: 3px solid transparent;
-<<<<<<< HEAD
     border-color: #8742c0;
     border-width:5px;  
     border-style:dotted solid;
@@ -186,17 +96,6 @@ body
 
 #loader1:before{
   content: "";
-=======
-    border-color:#c9a8e9;
-    border-width: 5px;
-    border-style: dotted solid;
-    -webkit-animation: spin 60s linear infinite;
-    animation: spin 60s linear infinite;
-}
-#loader1:before
-{
-    content:"";
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
     position: absolute;
     top: 70px;
     left: 70px;
@@ -204,7 +103,6 @@ body
     bottom: 70px;
     border-radius: 50%;
     border: 3px solid transparent;
-<<<<<<< HEAD
     border-color: #7e43ba;
     border-style:dotted;
     -webkit-animation: spin 18s linear infinite;
@@ -214,23 +112,12 @@ body
 
 #loader1:after{
   content: "";
-=======
-    border-color:#dcc4f0;
-    border-style: dotted;
-    -webkit-animation: spin 18s linear infinite;
-    animation: spin 18s linear infinite;
-}
-#loader1:after
-{
-    content:"";
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
     position: absolute;
     top: 55px;
     left: 55px;
     right: 55px;
     bottom: 55px;
     border-radius: 50%;
-<<<<<<< HEAD
     border-color: #a759eb;
     border-width:5px;  
     border-style:double dashed solid dotted ;
@@ -246,30 +133,10 @@ body
         transform: rotate(0deg); /* firefox */
     }
     100% {
-=======
-    border-color:#caa3e8;
-    border-width: 5px;
-    border-style: double dashed solid dotted;
-    box-shadow: 0 0 40px #c9a8e9;
-    -webkit-animation: spin 60s linear infinite;
-    animation: spin 60s linear infinite;
-}
-/* for spinning */
-@-webkit-keyframes spin
-{
-    0%
-    {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%
-    {
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
-<<<<<<< HEAD
 
 @keyframes spin {
   0%   {
@@ -406,41 +273,3 @@ body
   }
 }
 /**********************Input Box End***************************/
-=======
-@keyframes spin 
-{
-    0%
-    {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-/* for text shadow */
-@-webkit-keyframes neon2
-{
-    from
-    {
-        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #c9a8e9, 0 0 70px #f3e9fb;
-    }
-    to
-    {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #c9a8e9, 0 0 35px #b48fd9;
-    }
-}
-@keyframes neon2
-{
-    from 
-    { 
-        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #c9a8e9, 0 0 70px #f3e9fb; 
-    }
-    to   
-    { 
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #c9a8e9, 0 0 35px #b48fd9; 
-    }
-}
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
