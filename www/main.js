@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function() {
 	$('.text').textillate({
         loop: true,
@@ -48,21 +47,5 @@ $(document).ready(function() {
         $("#SiriWave").attr("hidden", false);
         eel.playClickSound();
         eel.allCommands()();
-=======
-$(document).ready(function()
-{
-    $('.text').textillate
-    ({
-        loop: true,
-        sync: true,
-        in: 
-        {
-            effect:"fadeInRight",
-        },
-        out:
-        {
-            effect:"fadeOut",
-        },
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
     });
 });
