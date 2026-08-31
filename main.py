@@ -2,8 +2,11 @@ import os
 import eel
 from engine.features import *
 from engine.command import *
+from engine.db import init_db
+
 eel.init('www')
 
+init_db()
 playAssistantSound()
 eel.start('index.html', mode='edge', host='localhost', port=8000, block=True)
 

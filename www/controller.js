@@ -5,6 +5,10 @@ $(document).ready(function () {
         $(".siri-message li:first").text(message);
         $('.siri-message').textillate('start');
 
+        // New: also log the message in the chat history panel
+        if (typeof appendChatMessage === 'function') {
+            appendChatMessage(message, 'assistant');
+        }
     }
 
     // Display hood

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>SHINOBU</title>
     <link rel="shortcut icon" href="assets/img/shinobu.ico">
 
@@ -25,37 +24,12 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <div id="loader-wrapper">
-=======
-    <title>Shinobu</title>
-    <link rel="shortcut icon" href="assets/img/shinobu.ico">
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/texllate/animate.js">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <div class="container">   
-        <section id="Oval" class="mb-4">
-            <div class="row">
-                <div class="col-md-1"> </div>
-                <div class="col-md-10"> 
-                    <div id="loader-wrapper">   
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
                         <div id="loader">
                             <div id="loader1">
                             </div>
                         </div>
                         <p>SHINOBU</p>
                     </div>
-<<<<<<< HEAD
                     <h5 class="text text-center">Ask me anything</h5>
                     <!-- /****************************Input Box******************************/ -->
 
@@ -92,6 +66,75 @@
                 </div>
             </div>
         </section>
+
+        <!-- Chat history panel (opened by the existing ChatBtn) -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Conversation</h5>
+                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div id="chat-log"></div>
+                <p class="chat-hint">Type in the box below and press Enter, or use the mic — replies show up here
+                    too.</p>
+            </div>
+        </div>
+
+        <!-- Settings panel (opened from main.js when SettingsBtn is clicked) -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSettings"
+            aria-labelledby="offcanvasSettingsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasSettingsLabel">Settings</h5>
+                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+                <div class="settings-section">
+                    <h6>Assistant</h6>
+                    <label class="settings-field">Name
+                        <input type="text" id="setting-name" class="input-field-box">
+                    </label>
+                    <label class="settings-field">Voice
+                        <select id="setting-voice" class="input-field-box"></select>
+                    </label>
+                    <label class="settings-field">Speech rate <span id="rate-value">190</span>
+                        <input type="range" id="setting-rate" min="120" max="260" step="10">
+                    </label>
+                    <button id="save-settings-btn" class="glow-on-hover settings-btn">Save</button>
+                    <span id="settings-status"></span>
+                </div>
+
+                <hr>
+
+                <div class="settings-section">
+                    <h6>App shortcuts</h6>
+                    <p class="settings-hint">Say "open [name]" to launch these apps.</p>
+                    <ul id="app-shortcut-list" class="shortcut-list"></ul>
+                    <div class="shortcut-form">
+                        <input id="app-name" class="input-field-box" placeholder="Name">
+                        <input id="app-path" class="input-field-box" placeholder="Path to .exe">
+                        <button id="add-app-shortcut-btn" class="glow-on-hover settings-btn">Add</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="settings-section">
+                    <h6>Website shortcuts</h6>
+                    <p class="settings-hint">Say "open [name]" to launch these sites.</p>
+                    <ul id="web-shortcut-list" class="shortcut-list"></ul>
+                    <div class="shortcut-form">
+                        <input id="web-name" class="input-field-box" placeholder="Name">
+                        <input id="web-url" class="input-field-box" placeholder="https://...">
+                        <button id="add-web-shortcut-btn" class="glow-on-hover settings-btn">Add</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     
@@ -101,26 +144,10 @@
         crossorigin="anonymous"></script>
 
     <!--Jquery  -->
-=======
-                    <h5 class="text-light text text-center">Ask me anything</h5>
-                </div>
-                <div class="col-md-1"> </div>
-            </div>
-
-        </section>
-    </div>
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
-    crossorigin="anonymous"></script>
-
-    <!-- Jquery -->
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="main.js"></script>
 
     <!-- Texllate js -->
-<<<<<<< HEAD
     <script src="assets/vendore/texllate/jquery.fittext.js"></script>
     <script src="assets/vendore/texllate/jquery.lettering.js"></script>
     <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
@@ -129,11 +156,5 @@
     <!-- Siri wave link -->
     <script src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
     <script src="./controller.js"></script>
-=======
-    <script src="assets/texllate/jquery.fittext.js"></script>
-    <script src="assets/texllate/jquery.lettering.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/jschr/textillate/jquery.textillate.js"></script>
-    <script type="text/javascript" src="/eel.js"></script>
->>>>>>> 526b2e49b0a896490da9dadefb9754b1634a233f
 </body>
 </html>
