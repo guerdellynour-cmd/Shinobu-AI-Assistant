@@ -273,39 +273,191 @@ p{
   }
 }
 /**********************Input Box End***************************/
-@keyframes spin 
-{
-    0%
-    {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+
+
+/* New additions below for the chat + settings panels.*/
+
+.offcanvas {
+    background-color: #3c1a52;
+    color: #f3e9fb;
+    box-shadow: 0 0 25px #5500ff;
 }
-/* for text shadow */
-@-webkit-keyframes neon2
-{
-    from
-    {
-        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #c9a8e9, 0 0 70px #f3e9fb;
-    }
-    to
-    {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #c9a8e9, 0 0 35px #b48fd9;
-    }
+
+.offcanvas-header {
+    border-bottom: 1px solid #7a4aa8;
 }
-@keyframes neon2
-{
-    from 
-    { 
-        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #c9a8e9, 0 0 70px #f3e9fb; 
-    }
-    to   
-    { 
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #c9a8e9, 0 0 35px #b48fd9; 
-    }
+
+.offcanvas-title {
+    font-family: cursive;
+    color: #ebb3ff;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat panel */
+
+#chat-log {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+.chat-hint {
+    font-size: 12px;
+    color: #c9a8e9;
+    opacity: 0.8;
+}
+
+.chat-bubble {
+    max-width: 85%;
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.chat-bubble.assistant {
+    align-self: flex-start;
+    background: #54225ea8;
+    border: 1px solid #7a4aa8;
+    border-bottom-left-radius: 3px;
+}
+
+.chat-bubble.user {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #ad3bde, #6618a5);
+    color: #fff;
+    border-bottom-right-radius: 3px;
+}
+
+/* Settings panel */
+
+.settings-section h6 {
+    color: #ebb3ff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.settings-hint {
+    font-size: 12px;
+    color: #c9a8e9;
+    opacity: 0.85;
+    margin-top: -4px;
+}
+
+.settings-field {
+    display: block;
+    font-size: 12px;
+    color: #c9a8e9;
+    margin-bottom: 10px;
+}
+
+.input-field-box {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    background-color: #54225ea8;
+    border: 1px solid #7a4aa8;
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: #fff;
+    outline: none;
+    font-family: cursive;
+    font-size: 13px;
+}
+
+.settings-field input[type="range"] {
+    padding: 0;
+    accent-color: #ad3bde;
+}
+
+.settings-btn {
+    width: auto;
+    height: auto;
+    padding: 6px 16px;
+    margin-top: 6px;
+    margin-left: 0;
+}
+
+#settings-status {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #ebb3ff;
+}
+
+.shortcut-list {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.shortcut-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 2px;
+    border-bottom: 1px solid #7a4aa8;
+}
+
+.shortcut-list li.empty {
+    color: #c9a8e9;
+    font-size: 12px;
+    border-bottom: none;
+}
+
+.shortcut-list li div {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.shortcut-list li strong {
+    font-size: 13px;
+}
+
+.shortcut-list li span {
+    font-size: 11px;
+    color: #c9a8e9;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px;
+}
+
+.remove-shortcut-btn {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #7a4aa8;
+    background: transparent;
+    color: #c9a8e9;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.remove-shortcut-btn:hover {
+    color: #fff;
+    border-color: #ebb3ff;
+}
+
+.shortcut-form {
+    display: flex;
+    gap: 6px;
+}
+
+.shortcut-form .input-field-box {
+    margin-top: 0;
 }
